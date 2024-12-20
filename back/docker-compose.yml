@@ -1,0 +1,24 @@
+services:
+  ws:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080/tcp"
+    container_name: "tpjdr_ws"
+  db:
+    image: mariadb:11.6.2
+    volumes:
+      - tpjdr_db:/data
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: tpjdr
+        MYSQL_USER: user
+        MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    container_name: "tpjdr_db"
+
+volumes:
+  tpjdr_db:
+    driver: local

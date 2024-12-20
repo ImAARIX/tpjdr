@@ -1,0 +1,43 @@
+# Retirer le commentaire pour compatibilité avec anciennes versions de docker compose
+# version: 3.9
+services:
+  front:
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80/tcp"
+    networks:
+      - tpjdr
+    container_name: "tpjdr_front"
+  back:
+    build:
+      context: ./back
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080/tcp"
+    networks:
+      - tpjdr
+    container_name: "tpjdr_back"
+  db:
+    image: mariadb:11.6.2
+    volumes:
+      - tpjdr_db:/data
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: tpjdr
+        MYSQL_USER: user
+        MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    networks:
+      - tpjdr
+    hostname: "db"
+    container_name: "tpjdr_db"
+
+networks:
+  tpjdr: {}
+
+volumes:
+  tpjdr_db:
+    driver: local

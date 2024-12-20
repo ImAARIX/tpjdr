@@ -1,0 +1,470 @@
+{
+  "id": "057a9a2b-01b6-434d-b477-69c0eac494d7",
+  "version": "2.0",
+  "name": "tpjdr",
+  "url": "http://localhost:5173",
+  "tests": [{
+    "id": "ce94a651-9800-428e-bff1-4fa85b4aab1a",
+    "name": "test1_inputs_et_verification_de_lapparition_de_lencart",
+    "commands": [{
+      "id": "8c276c8a-c562-4758-9cd4-43a7ee010bac",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39991465-d931-42ea-9ff0-bb462592ee56",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1227x640",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20bf91ba-a41f-4051-9319-8e13907139b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb2490a4-a991-4608-9d85-572ec24dcbd7",
+      "comment": "",
+      "command": "type",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='Mon nom']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Mon nom"
+    }, {
+      "id": "245428b8-7366-4afc-929e-6fe6aa3368e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=select",
+      "targets": [
+        ["css=select", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d95b45ac-5b9c-41d1-88b4-0f51d0f4e010",
+      "comment": "",
+      "command": "select",
+      "target": "css=select",
+      "targets": [],
+      "value": "label=Warrior"
+    }, {
+      "id": "f71e9d09-31dc-48c6-b803-9456f54dcf90",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=divCaracteristiques",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "542942f6-a881-4e69-a2d7-efcd9f8369cd",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=caracteristiquesStrength",
+      "targets": [],
+      "value": "Strength : 10"
+    }, {
+      "id": "2d84f648-4985-4a71-b2f6-217c90cecfdf",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=caracteristiquesIntelligence",
+      "targets": [],
+      "value": "Intelligence : 5"
+    }, {
+      "id": "77a12bd5-7ef6-4a99-888b-24c14b87dc7b",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=caracteristiquesLuck",
+      "targets": [],
+      "value": "Luck : 3"
+    }]
+  }, {
+    "id": "6b32c098-c23d-4b3f-8638-738d7bc59cd5",
+    "name": "test4_ouverture_du_plateau_de_jeu_reussie",
+    "commands": [{
+      "id": "4e25079d-d6a5-4064-a887-9285fac38dd3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39a6e8f5-2dc3-46e7-9e7d-79f34c71ac8b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1227x640",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f12ebb12-98a4-403f-94fb-33284e9be688",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a2c3e06-05bf-46df-977b-b757a26a88de",
+      "comment": "",
+      "command": "type",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='Mon nom']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Mon nom"
+    }, {
+      "id": "acf3aeff-bc9f-4fe1-bdde-d6af3f310245",
+      "comment": "",
+      "command": "click",
+      "target": "css=select",
+      "targets": [
+        ["css=select", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b529f1dc-e697-48a5-8358-bb071f0b8a3f",
+      "comment": "",
+      "command": "select",
+      "target": "css=select",
+      "targets": [],
+      "value": "label=Warrior"
+    }, {
+      "id": "2e0ef3ac-7130-4468-b1e9-d56df1ddf649",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//div[@id='root']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Créer le personnage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68f08134-5c7c-46d9-8603-efcacce2929d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=plateauDeJeu",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67266040-2314-494c-aeae-c19714ecfaef",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [],
+      "value": "Combat contre un monstre"
+    }, {
+      "id": "13143da8-77be-4f3c-96ff-4c43602358be",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(2) > p:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(2) > p:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='plateauDeJeu']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Nom : Mon nom')]", "xpath:innerText"]
+      ],
+      "value": "Nom : Mon nom"
+    }, {
+      "id": "2f71b1ad-2ac9-4300-bc48-44621605a53e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(2) > p:nth-child(3)",
+      "targets": [
+        ["css=div:nth-child(2) > p:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='plateauDeJeu']/div/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Classe : WARRIOR')]", "xpath:innerText"]
+      ],
+      "value": "Classe : WARRIOR"
+    }]
+  }, {
+    "id": "93e754c7-72a5-425d-a970-23270a00e89b",
+    "name": "test2_pas_de_nom_dans_linput",
+    "commands": [{
+      "id": "f697a2fb-afde-41b5-a623-28f53122b4f1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ce8882f-8ddf-4bf3-a92d-f1816dfebff2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1227x640",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9de2d756-1603-4010-a0f9-f9768199b6eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb343c41-e0e8-4bf9-9513-0f6e7247607a",
+      "comment": "",
+      "command": "type",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='Mon nom']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Mon nom"
+    }, {
+      "id": "f3e073d0-928d-4f7d-8c4d-bdaa2c1fe29f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//div[@id='root']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Créer le personnage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfbffaf3-dd27-4150-87cf-2b378e95773e",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Veuillez entrer un nom et choisir une classe !",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6441004-cfe8-4aa6-8502-770cc35ecbfc",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "id=plateauDeJeu",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9047baf8-ab81-4ba5-a20f-d72c80efa86c",
+    "name": "test3_pas_de_classe_dans_linput",
+    "commands": [{
+      "id": "db7e7b3a-afb8-451a-8172-e033bc6eee2b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ad4dcc7-3f3c-414c-816b-20badb1e14f2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1227x640",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ced88226-9d34-44e3-85a4-554386a29b77",
+      "comment": "",
+      "command": "click",
+      "target": "css=select",
+      "targets": [
+        ["css=select", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2957aee4-7b63-47e3-b207-2dd5ab29ae90",
+      "comment": "",
+      "command": "select",
+      "target": "css=select",
+      "targets": [],
+      "value": "label=Warrior"
+    }, {
+      "id": "14fbfa20-cc88-443f-b332-574ffbe409e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//div[@id='root']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Créer le personnage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61b243a9-bc6e-4b0d-84b7-00c3e4316888",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Veuillez entrer un nom et choisir une classe !",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cf94ce95-c30d-4745-956f-b4cbb62d2276",
+    "name": "test5_test_de_combat_avec_le_rat",
+    "commands": [{
+      "id": "f4de0c02-4d63-4f99-98b2-3c8aaeb5bf4e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "355e7d5c-fcc9-446f-8f65-2e6c086c3652",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73d89f5c-923b-4a0e-9bc0-34a0c75fce44",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92f4cb63-5e99-45cf-b771-227cc37523dd",
+      "comment": "",
+      "command": "type",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='Mon nom']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Mon nom"
+    }, {
+      "id": "9f644096-eab0-43fc-abd8-5dfe648be0eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=select",
+      "targets": [
+        ["css=select", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3994f113-09c5-408f-bee9-699dfbcdd184",
+      "comment": "",
+      "command": "select",
+      "target": "css=select",
+      "targets": [],
+      "value": "label=Warrior"
+    }, {
+      "id": "471205bb-6104-451b-b08e-ca3f69c2c993",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//div[@id='root']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Créer le personnage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ff6ebbf-c536-47b2-80b8-b92c6dceb663",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(2) > p:nth-child(4)",
+      "targets": [
+        ["css=div:nth-child(2) > p:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='plateauDeJeu']/div/p[3]", "xpath:idRelative"],
+        ["xpath=//p[3]", "xpath:position"],
+        ["xpath=//p[contains(.,'Vie : 100')]", "xpath:innerText"]
+      ],
+      "value": "Vie : 100"
+    }, {
+      "id": "f6ab5338-5efb-4016-8dd7-516bfca8acd5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(1)",
+      "targets": [
+        ["css=p:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='plateauDeJeu']/div[4]/p", "xpath:idRelative"],
+        ["xpath=//div[4]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Un RAT apparaît ! Préparez-vous au combat.')]", "xpath:innerText"]
+      ],
+      "value": "Un RAT apparaît ! Préparez-vous au combat."
+    }, {
+      "id": "e10ff3f7-61ea-418c-8ebb-56d027dde29b",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//div[@id='plateauDeJeu']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Attaquer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53a671ec-217e-41bb-989c-70b31a9234f2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(2) > p:nth-child(4)",
+      "targets": [
+        ["css=div:nth-child(2) > p:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='plateauDeJeu']/div/p[3]", "xpath:idRelative"],
+        ["xpath=//p[3]", "xpath:position"],
+        ["xpath=//p[contains(.,'Vie : 95')]", "xpath:innerText"]
+      ],
+      "value": "Vie : 95"
+    }, {
+      "id": "97f38e3d-13c6-432a-9229-44c87edc8e3a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(3) > p:nth-child(3)",
+      "targets": [
+        ["css=div:nth-child(3) > p:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='plateauDeJeu']/div[2]/p[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Vie : 85')]", "xpath:innerText"]
+      ],
+      "value": "Vie : 85"
+    }]
+  }],
+  "suites": [{
+    "id": "4754c75c-3d5f-4230-a6a3-96288ed2c966",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ce94a651-9800-428e-bff1-4fa85b4aab1a"]
+  }],
+  "urls": ["http://localhost:5173/"],
+  "plugins": []
+}
